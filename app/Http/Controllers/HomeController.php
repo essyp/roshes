@@ -18,7 +18,7 @@ use App\Models\Company;
 use App\Models\Blog;
 use App\Models\Service;
 use App\Models\Project;
-use App\Models\team;
+use App\Models\Team;
 use App\Models\Gallery;
 use App\Models\Enquiry;
 
@@ -30,10 +30,15 @@ class HomeController extends Controller
     }
 
     public function getAbout() {
-        $data = Company::first();
+        $data = Company::where('id',1)->first();
         $services = Service::where('status',1)->where('featured',1)->limit(3)->get();
         $teams = Team::where('status',1)->where('featured',1)->limit(3)->get();
         return view('front/about', compact('data','services','teams'));
+    }
+
+    public function getPhpInfo() {
+        $info = phpinfo();
+        return view('front/php-info', compact('info'));
     }
 
     public function getServices() {

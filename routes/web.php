@@ -28,6 +28,8 @@ Route::group(['middleware' => ['web'], 'namespace' => 'App\Http\Controllers'], f
     Route::get('project/{id}', 'HomeController@getProjectDetail');
 
     Route::post('send-enquiry', 'HomeController@sendEnquiry');
+
+    Route::get('php-info', 'HomeController@getPhpInfo');
 });
 
 Route::group(['middleware' => ['admin'], 'namespace' => 'App\Http\Controllers', 'prefix' => 'admin/'], function () {

@@ -31,8 +31,8 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-
-        $comm = Company::first();
+        
+        $comm = Company::where('id', 1)->first();
         view()->share('comm',$comm);
 
         View::composer('*', function($view) {

@@ -11,7 +11,7 @@
                                 <!-- page title -->		
                                 <div class="container">
                                     <div class="page-title no-border">
-                                        <h2>{{$comm->shortname}} - Who We Are</h2>
+                                        <h2>{{$data->shortname}} - Who We Are</h2>
                                         <h3><span>“The beginning of the first” </span></h3>
                                     </div>
                                 </div>
@@ -40,8 +40,8 @@
                                     </div>
                                     <div class="row">
                                         <div class="col-md-12">
-                                            <p>{!!$comm->shortdescrpt!!}</p>
-                                            <p>{!!$comm->fulldescrpt!!}</p>
+                                            <p>{!!$data->shortdescrpt!!}</p>
+                                            <p>{!!$data->fulldescrpt!!}</p>
                                         </div>
                                     </div>
                                 </section>
@@ -102,7 +102,7 @@
                                                 <div class="row">
                                                     <div class="col-md-12">
                                                         <h5>Mission</h5>
-                                                        <p>{{$comm->mission}}</p>
+                                                        <p>{{$data->mission}}</p>
                                                     </div>
                                                 </div>
                                             </div>

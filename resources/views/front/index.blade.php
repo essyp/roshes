@@ -23,7 +23,7 @@
             <header>
                 <div class="header-inner">
                     <div class="logo-holder">
-                        <a href="index.html" class="ajax"><img src="{{asset('images/logo/'.$comm->logo)}}" style="max-width: 150px;" alt=""></a>
+                        <a href="{{url('/')}}" class="ajax"><img src="{{asset('images/logo/'.$comm->logo)}}" style="max-width: 150px;" alt=""></a>
                     </div>
                     <div class="nav-button-holder">
                         <div class="nav-button vis-m"><span></span><span></span><span></span></div>
@@ -31,13 +31,13 @@
                     <div class="nav-holder">
                     <nav>
                             <ul>
-                                <li><a href="{{url('/')}}" class="ajax">Home</a></li>
+                                <li><a href="{{url('/')}}" class="ajax act-link">Home</a></li>
                                 <li>
-                                    <a href="{{url('about')}}" class="ajax pa act-link">About us </a>
-                                    <ul>
+                                    <a href="{{url('about')}}" class="ajax pa">About us </a>
+                                    <!-- <ul>
                                         <li><a href="{{url('about')}}" class="ajax custom-scroll-link">About us </a></li>
                                         <li><a href="{{url('teams')}}" class="ajax custom-scroll-link">Team</a></li>
-                                    </ul>
+                                    </ul> -->
                                 </li>
                                 <li><a href="{{url('services')}}" class="ajax pp">Services</a></li>
                                 <li><a href="{{url('projects')}}" class="ajax pp">Projects</a></li>
