@@ -91,5 +91,21 @@
         <script type="text/javascript" src="{{asset('front/js/plugins.js')}}"></script>
         <script type="text/javascript" src="{{asset('front/js/core.js')}}"></script>
         <script type="text/javascript" src="{{asset('front/js/scripts.js')}}"></script>
+
+        <script>
+            var f = new Swiper("#horizontal-slider", {
+                speed: 1200,
+                loop: true,
+                preventLinks: true,
+                grabCursor: true,
+                mousewheelControl: e,
+                mode: "horizontal",
+                pagination: ".pagination",
+                paginationClickable: true,
+                autoplay: true,
+                speed: 2200,
+
+            });
+        </script>
     </body>
 </html>
